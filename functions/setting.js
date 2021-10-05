@@ -11,11 +11,11 @@ import * as Hx from './download.js';
 
 export class Setting  {
 
-Wait = 'Loading...'
+Wait = 'Lagi Di Proses...'
 Menu = `
-*Hai Kak Saya HexaBot*
+*Hai Kak Saya ZexyBotz*
 
-*Berikut Menu HexaBot*
+*Berikut Menu ZexyBotz*
 
 *Sticker*
 *Sticker To Image*
@@ -56,7 +56,7 @@ async balas(id,teks,m) {
 	await hexa.sendMessage(id,teks,MessageType.text,{quoted:m})
 }
 
-async button(id,teks,id1,id2 ,foots = 'HexaBot') {
+async button(id,teks,id1,id2 ,foots = 'Zexy Bot Downloader') {
 		let buttons = [
 				{buttonId: 'id1', buttonText: {displayText: id1}, type: 1},
 				{buttonId: 'id2', buttonText: {displayText: id2}, type: 1}
