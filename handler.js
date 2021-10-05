@@ -29,7 +29,7 @@ export let hexa = async (hexa, m,prefix) => {
                         balas(id,Wait,m)
                         let data = await hexa.downloadAndSaveMediaMessage(m)
                         let file = 'image.png'
-                        await ConvertMedia(id,data,file,'HexaBot',m)
+                        await ConvertMedia(id,data,file,'ZexyBotz',m)
         } else if (YtIdRegex.test(chats)) {
                         Konsol('Youtube',YtIdRegex.exec(chats)[0],From)
                         balas(id,Wait,m)
@@ -46,9 +46,9 @@ export let hexa = async (hexa, m,prefix) => {
                         let buffer = await Hx.Igdl(IgIdRegex.exec(chats)[0])
                         for (let i of buffer ? buffer : buffer.medias){
                         if(i.url.includes('.mp4')){
-                        sendFileUrl(id,i.url,video,'HexaBot','',m)
+                        sendFileUrl(id,i.url,video,'ZexyBotz','',m)
                         } else {
-                        sendFileUrl(id,i.url,image,'HexaBot','',m)     
+                        sendFileUrl(id,i.url,image,'ZexyBotz','',m)     
                         }
                 }
         } else if (TtIdRegex.test(chats)) {
@@ -97,22 +97,22 @@ export let hexa = async (hexa, m,prefix) => {
                         balas(id,Wait,m)
                         let respon_ =  m.message.buttonsResponseMessage.contextInfo.quotedMessage.buttonsMessage.footerText
                         let buffer_ = await Hx.Ttdownloader(TtIdRegex.exec(respon_)[0])
-                        sendFileUrl(id,buffer_.wm,video,'HexaBot','',m)
+                        sendFileUrl(id,buffer_.wm,video,'ZexyBotz','',m)
                 break
                 case 'NO WM':
                         balas(id,Wait,m)
                         let respon__ =  m.message.buttonsResponseMessage.contextInfo.quotedMessage.buttonsMessage.footerText
                         let buffer__ = await Hx.Ttdownloader(TtIdRegex.exec(respon__)[0])
-                        sendFileUrl(id,buffer__.nowm,video,'HexaBot','',m)
+                        sendFileUrl(id,buffer__.nowm,video,'ZexyBotz','',m)
                 break
                 case 'OWNER':
                         const vcard = 'BEGIN:VCARD\n' 
                         + 'VERSION:3.0\n' 
-                        + 'FN:Hexa\n' 
-                        + 'ORG:Hexagon;\n' 
-                        + 'TEL;type=CELL;type=VOICE;waid=6285751056816:+62 857-5105-6816\n' 
+                        + 'FN:Rival\n' 
+                        + 'ORG:VallXcode7;\n' 
+                        + 'TEL;type=CELL;type=VOICE;waid=6281314050985:+62 813-1405-0985\n' 
                         + 'END:VCARD'
-                        await hexa.sendMessage(id, {displayname: "Hexa", vcard: vcard}, MessageType.contact)
+                        await hexa.sendMessage(id, {displayname: "Rival", vcard: vcard}, MessageType.contact)
                 break
                 case 'HOW TO USE':
                         balas(id,Note,m)
